@@ -2,14 +2,14 @@ require('dotenv').config();
 var express = require('express');
 var app = express();
 var favicon = require('serve-favicon');
-var knex = require('./db/knex');
+// var knex = require('./db/knex');
 var bodyParser = require('body-parser');
 
-var server = {
-  main: require('./controllers/main.js'),
-  admin: require('./controllers/admin.js'),
-  checkout: require('./controllers/checkout.js')
-}
+// var server = {
+//   main: require('./controllers/main.js'),
+//   admin: require('./controllers/admin.js'),
+//   checkout: require('./controllers/checkout.js')
+// }
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
